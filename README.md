@@ -7,11 +7,11 @@ and does not require authorization.
 </br>
 
 ## App Features
-[ ] Click a button to get correct answer
-[ ] Click a button to go to the next question
+* [X] Click a button to get correct answer
+* [X] Click a button to go to the next question
 
 ## What I have learned about APIs during this project:
-[ ] API is really a much larger concept than I originally thought.
+* API is really a much larger concept than I originally thought.
 
 ## Screenshot
 ![Optional Text](https://github.com/murraiscanlon/trivia-quiz/blob/master/trivia-quiz.png)
