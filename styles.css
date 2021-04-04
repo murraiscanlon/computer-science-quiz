@@ -20,7 +20,7 @@ h4 {
 
 .title {
     font-size: 5.4rem;
-    color: #56a5ab;
+    color: #00917c;
     font-family: 'Fredoka One', cursive;
 }
 
@@ -117,13 +117,13 @@ h3 {
 }
 
 .question-header{
-    color: midnightblue;
+    color: #28527a;
     font-size: 2.2rem;
     font-weight: 700;
 }
 
 .correct-answer{
-    color: crimson;
+    color: #f48b29;
     font-size: 2.2rem;
     font-weight: 700;
 }
