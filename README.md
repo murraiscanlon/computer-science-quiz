@@ -1,4 +1,4 @@
-# Trivia Quiz 🤔
+# 🤓 Trivia Quiz
 This web app uses the OpenTriviaDB API to display interactive quiz questions to the user.
 
 ## Behind The Scenes
@@ -6,7 +6,7 @@ I wanted to learn more about APIs and so for #100DaysOfCode, I decided to start 
 and does not require authorization.
 </br>
 
-## App Features
+## 🌟 App Features
 * [X] Click a button to get correct answer
 * [X] Click a button to go to the next question
 
