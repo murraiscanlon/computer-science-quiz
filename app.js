@@ -25,7 +25,6 @@ function useApiData(data){
     ]
 
     answerChoices.sort(() => Math.random() - .5);
-    console.log("answer choices: " + answerChoices);
 
     document.querySelector("#category").innerHTML = `Category: ${data.results[0].category}`
     document.querySelector("#difficulty").innerHTML = `Difficulty: ${data.results[0].difficulty}`
