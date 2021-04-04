@@ -1,4 +1,4 @@
-# Trivia Quiz
+# Trivia Quiz 🤔
 This web app uses the OpenTriviaDB API to display interactive quiz questions to the user.
 
 ## Behind The Scenes
