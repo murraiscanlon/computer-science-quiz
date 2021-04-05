@@ -16,6 +16,7 @@ and does not require authorization.
 * API is really a much larger concept than I originally thought.
 * Consuming API data is actually pretty straight forward. You have to know the endpoint and the parameters.
 * Displaying API data on the browser is much more time comsuming than just accessing the data.
+* I used Google Fonts for the app title and just realized that is an API.
 
 ## Screenshot
 ![Optional Text](https://github.com/murraiscanlon/trivia-quiz/blob/master/trivia-quiz.png)
