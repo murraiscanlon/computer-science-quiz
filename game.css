@@ -11,12 +11,12 @@
     color: #333;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    margin-bottom: 2rem;
-}
+/*h1,*/
+/*h2,*/
+/*h3,*/
+/*h4 {*/
+/*    margin-bottom: 2rem;*/
+/*}*/
 
 .title {
     font-size: 5.4rem;
@@ -25,7 +25,7 @@ h4 {
 }
 
 .title-container{
-    margin: 2rem auto;
+    margin: .5rem auto 1.5rem auto;
 }
 
 .credit{
@@ -141,5 +141,14 @@ h3 {
 .process-btn{
     padding: 0 2rem;
     margin: 0 auto 3rem;
+}
+
+.fas{
+    padding: 3rem;
+    color: #00917c;
+}
+
+.home-icon{
+    display: inline-block;
 }
 
