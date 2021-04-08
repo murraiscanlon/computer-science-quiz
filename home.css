@@ -18,6 +18,8 @@ h4 {
     margin-bottom: 1rem;
 }
 
+
+
 h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 5.4rem;
@@ -104,5 +106,9 @@ h3 {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+}
+
+.cs-title{
+    font-family: 'Source Code Pro', monospace;
 }
 
