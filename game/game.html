@@ -13,6 +13,7 @@
 
 </head>
 <body>
+
 <div class="home-icon" style="font-size: 24px;">
     <a href="../index.html"><i class="fas fa-home fa-lg"></i></a>
     <!--    <a href="/users/edit"><i class="fa fa-cog" style="color:black !important;"></i> Edit profile</a>-->
@@ -51,8 +52,15 @@
 
     </div>
 </div>
-
+<div id="categoryResult" class="categoryResult"></div>
 <!--    Scripts for the webpage-->
+<script>
+    const categoryResult = document.getElementById('categoryResult')
+    new URLSearchParams(window.location.search).forEach((name, value) => {
+        categoryResult.append(`${name}`)
+        categoryResult.append(document.createElement('br'))
+    })
+</script>
 <script defer src="game.js"></script>
 
 </body>
