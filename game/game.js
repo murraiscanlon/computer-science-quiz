@@ -1,31 +1,16 @@
-window.onload = getApiQuestions()
-
-
-
-
+window.onload = sendApiRequest()
 
 
 //An asynchronous function to fetch data from the API
-async function getApiQuestions(){
-    let result = document.getElementById('categoryResult').innerText;
-    selectionArr = result.split(". ");
-    let categoryId = parseInt(selectionArr[0]);
-    categoryId += 8;
-    console.log("category id: " + categoryId);
-    let categoryName = selectionArr[1];
-    let url = `https://opentdb.com/api.php?amount=1&category=${String(categoryId)}&type=multiple`
-    console.log("url: " + url)
-
-    let response = await fetch(url);
-    // console.log(response)
+async function sendApiRequest(){
+    let response = await fetch(`https://opentdb.com/api.php?amount=1&type=multiple `);
+    console.log(response)
 
     let data = await response.json()
     console.log(data)
 
     useApiData(data)
     checkAnswer(data.results[0].correct_answer);
-
-
 
 }
 
@@ -50,7 +35,6 @@ function useApiData(data){
     document.querySelector("#answer4").innerHTML =  `D)  ${answerChoices[3]}`   //data.results[0].incorrect_answers[2]
 
 
-
 }
 
 function checkAnswer(correctAnswer) {
@@ -63,9 +47,8 @@ function checkAnswer(correctAnswer) {
 let nextQuestion = document.querySelector("#next-question");
 nextQuestion.addEventListener("click", () => {
     document.querySelector("#correct-answer").innerHTML = "";
-    getApiQuestions();
+    sendApiRequest();
 })
-
 
 
 // let correctButton = document.querySelector("#answer1")

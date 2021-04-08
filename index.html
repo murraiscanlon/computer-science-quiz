@@ -17,23 +17,54 @@
     <div id="home" class="flex-center flex-column">
         <h1 class="title">Trivia Quiz</h1>
 
-        <h3 style="font-size:1.5rem">Developer Note: Categories are not working yet</h3>
-
-        <form action="./game/game.html" method="get">
-        <select class="btn" name="categories" id="categories" required>
+        <select class="btn" name="categories" id="categories">
             <option value="">Categories</option>
         </select>
-            <button type="submit" class="btn">Play</button>
-        </form>
-        <!--        <a class="btn score-btn" href="score.html">High Scores</a>-->
+
+
+
+        <a class="btn play-btn" href="./game/game.html">Play</a>
+<!--        <a class="btn score-btn" href="score.html">High Scores</a>-->
     </div>
 </div>
 
 
+<script>
+
+    window.onload = sendApiRequest()
+
+
+    //An asynchronous function to fetch data from the API
+    async function sendApiRequest(){
+        let response = await fetch(`https://opentdb.com/api_category.php`);
+        // console.log(response)
+
+        let data = await response.json()
+        // console.log(data)
+
+        length = data.trivia_categories.length;
+        let categories = document.getElementById("categories");
+            // arr = ["one", "two"];
+
+        for (let i = 0; i < length; i++){
+            let option = document.createElement("OPTION"),
+                txt = document.createTextNode(data.trivia_categories[i].name);
+            option.appendChild(txt);
+            categories.insertBefore(option, categories.lastChild);
+        }
+
+
+
+
+    }
+
+
+
+</script>
 
 <!--    Scripts for the webpage-->
-
-<script defer src="app.js"></script>
-<script defer src="./game/game.js"></script>
+<!--<script type="text/javascript" src="jquery"></script>-->
+<!--<script defer src="app.js"></script>-->
+<!--test-->
 </body>
 </html>
