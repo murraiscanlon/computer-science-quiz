@@ -9,7 +9,7 @@ and does not require authorization.
 ## 🌟 App Features
 * [X] Click a button to get correct answer
 * [X] Click a button to go to the next question
-* [ ] Allow user to choose a category
+* [X] Allow user to choose a category
 * [ ] Score each correctly answered question
 
 ## 📚 What I have learned about APIs during this project:
