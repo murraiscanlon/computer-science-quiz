@@ -108,7 +108,10 @@ h3 {
     transform: none;
 }
 
-.cs-title{
-    font-family: 'Source Code Pro', monospace;
-}
+/*#home{*/
+/*    display: block;*/
+/*}*/
 
+.selection{
+    display: inline-block;
+}
