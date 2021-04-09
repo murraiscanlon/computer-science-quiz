@@ -29,4 +29,3 @@ async function getApiCategories(){
 
 }
 
-© 2021 GitHub, Inc.
